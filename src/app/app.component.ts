@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Student } from "./student";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'secondApp';
+  title = 'My Second App';
+  bio:Student = {
+    sid: 991518202,
+    sname: "Uddip Amin",
+    scampus: "Trafalgar",
+    slogin: "aminu"
+  };
 }
